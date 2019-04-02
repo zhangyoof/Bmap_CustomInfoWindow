@@ -1,0 +1,40 @@
+{
+  "entry": "src/index.js",
+  "theme": {
+		"@icon-url": "'~antd-iconfont/iconfont'"
+  },
+  "env": {
+    "development": {
+      "extraBabelPlugins": [
+        "dva-hmr",
+         ["module-resolver", {
+            "alias": {
+                "@": "./src"
+            }
+          }],
+        "transform-runtime",
+        ["import", {
+            "libraryName": "antd",
+            "libraryDirectory": "lib",
+            "style": true
+        }]
+      ]
+    },
+    "production": {
+      "extraBabelPlugins": [
+        "transform-runtime",
+		"dva-hmr",
+		 ["module-resolver", {
+			"alias": {
+				"@": "./src"
+			}
+		  }],
+         ["import", {
+            "libraryName": "antd",
+            "libraryDirectory": "lib",
+            "style": true
+        }]
+      ]
+    }
+  }
+}

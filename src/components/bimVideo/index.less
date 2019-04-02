@@ -1,0 +1,105 @@
+
+.Modal_title{
+  padding:10px;
+  font-size: 18px;
+  border-bottom: 1px solid #fff;
+}
+.content_title{
+  padding: 10px 50px;
+}
+.annex_box{
+  padding: 10px 10px 10px 74px;
+}
+.center{
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+.table1 {
+  height: 35px;
+  overflow: hidden;
+  // padding-right: 10px;
+  border-bottom:1px solid #fff;
+}
+.table{
+  height:200px;
+  width:100%;
+  overflow: hidden;
+  padding-right: 6px;
+}
+.table table {
+  table-layout: fixed;
+}
+.table:hover{
+  overflow: auto;
+  padding-right: 0px;
+}
+.table::-webkit-scrollbar {
+  width: 6px;
+  height: 1px;
+}
+.table::-webkit-scrollbar-thumb {
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 5px rgba(237, 237, 237, 0.5);
+  background: rgba(237, 237, 237, 0.2);
+}
+.table::-webkit-scrollbar-track {
+  border-radius: 1px;
+  -webkit-box-shadow: inset 0 0 5px rgba(0, 0, 0, 0.2);
+  background: rgba(0, 0, 0, 0.2);
+}
+.icon{
+  font-size: 20px;
+  margin: 0 5px;
+  cursor:pointer;
+}
+//视频模态框 全局样式
+:global {
+    #identification_modal_box{
+      .video_modal {
+        display: flex !important;
+        justify-content: center !important;
+        align-items: center !important;
+        .ant-modal{
+        //   width:calc(~"(60% + 120px)") !important;
+          width:60% !important;
+          height:60% !important;
+          top:0 !important;
+          padding-bottom:0 !important;
+          background:#383838;
+        }
+        .ant-modal-content{
+          width:100%;
+          height:100%;
+          background:transparent;
+        }
+        .ant-modal-body{
+          width:100%;
+          height:100%;
+          color:#fff;
+          padding:0!important;
+        }
+        .ant-modal-close{
+          display:none;
+        }
+      }
+    }
+    .ant-form-item-label label {
+      color:#fff !important
+    }
+    .ant-table-thead > tr > th{
+      padding:8px !important;
+      background-color: transparent;
+      color:#fff
+    }
+    .ant-table-tbody > tr > td{
+      padding:5px 10px !important;
+      color:#fff;
+      
+    }
+    .ant-table-tbody > tr:hover td{
+      background: #4D4D4D !important
+      
+    }
+  }
